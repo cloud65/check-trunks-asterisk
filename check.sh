@@ -11,7 +11,6 @@ ALLTRUNKS=$(echo "$TRUNKS" | wc -l)
 REGTRUNKS=$(echo "$TRUNKS" | grep " Registered" | wc -l)
 if [ "$REGTRUNKS" -lt "$ALLTRUNKS" ]
 then
-	sleep 5
 	UNREG=$(echo "$TRUNKS" | grep -v " Registered" | sed -r 's/^ *//' | cut -d' ' -f1 | cut -d'/' -f1)
 
 	for TRUNK in $UNREG
