@@ -3,4 +3,4 @@
 
 Добавляем в Cron
 
-*/5 * * * * /etc/scripts/check.sh <chat_id> <telegram bot token>
+*/5 * * * * /etc/scripts/check.sh <chat_id> <telegram_bot_token>
